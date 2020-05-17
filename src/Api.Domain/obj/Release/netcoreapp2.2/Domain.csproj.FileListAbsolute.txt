@@ -1,0 +1,9 @@
+C:\API\src\Api.Domain\bin\Release\netcoreapp2.2\Domain.deps.json
+C:\API\src\Api.Domain\bin\Release\netcoreapp2.2\Domain.dll
+C:\API\src\Api.Domain\bin\Release\netcoreapp2.2\Domain.pdb
+C:\API\src\Api.Domain\obj\Release\netcoreapp2.2\Domain.csprojAssemblyReference.cache
+C:\API\src\Api.Domain\obj\Release\netcoreapp2.2\Domain.csproj.CoreCompileInputs.cache
+C:\API\src\Api.Domain\obj\Release\netcoreapp2.2\Domain.AssemblyInfoInputs.cache
+C:\API\src\Api.Domain\obj\Release\netcoreapp2.2\Domain.AssemblyInfo.cs
+C:\API\src\Api.Domain\obj\Release\netcoreapp2.2\Domain.dll
+C:\API\src\Api.Domain\obj\Release\netcoreapp2.2\Domain.pdb

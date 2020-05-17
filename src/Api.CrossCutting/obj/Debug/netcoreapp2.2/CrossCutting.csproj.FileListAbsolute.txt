@@ -1,0 +1,16 @@
+C:\API\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\CrossCutting.deps.json
+C:\API\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\CrossCutting.dll
+C:\API\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\CrossCutting.pdb
+C:\API\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.csprojAssemblyReference.cache
+C:\API\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.csproj.CoreCompileInputs.cache
+C:\API\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.AssemblyInfoInputs.cache
+C:\API\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.AssemblyInfo.cs
+C:\API\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.dll
+C:\API\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.pdb
+C:\API\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\Data.dll
+C:\API\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\Domain.dll
+C:\API\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\Service.dll
+C:\API\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\API\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\Service.pdb
+C:\API\src\Api.CrossCutting\bin\Debug\netcoreapp2.2\Data.pdb
+C:\API\src\Api.CrossCutting\obj\Debug\netcoreapp2.2\CrossCutting.csproj.CopyComplete

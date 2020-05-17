@@ -1,0 +1,15 @@
+C:\API\src\Api.Data\bin\Release\netcoreapp2.2\Data.deps.json
+C:\API\src\Api.Data\bin\Release\netcoreapp2.2\Data.runtimeconfig.json
+C:\API\src\Api.Data\bin\Release\netcoreapp2.2\Data.runtimeconfig.dev.json
+C:\API\src\Api.Data\bin\Release\netcoreapp2.2\Data.dll
+C:\API\src\Api.Data\bin\Release\netcoreapp2.2\Data.pdb
+C:\API\src\Api.Data\bin\Release\netcoreapp2.2\Domain.dll
+C:\API\src\Api.Data\bin\Release\netcoreapp2.2\Domain.pdb
+C:\API\src\Api.Data\obj\Release\netcoreapp2.2\Data.csprojAssemblyReference.cache
+C:\API\src\Api.Data\obj\Release\netcoreapp2.2\Data.csproj.CoreCompileInputs.cache
+C:\API\src\Api.Data\obj\Release\netcoreapp2.2\Data.AssemblyInfoInputs.cache
+C:\API\src\Api.Data\obj\Release\netcoreapp2.2\Data.AssemblyInfo.cs
+C:\API\src\Api.Data\obj\Release\netcoreapp2.2\Data.csproj.CopyComplete
+C:\API\src\Api.Data\obj\Release\netcoreapp2.2\Data.dll
+C:\API\src\Api.Data\obj\Release\netcoreapp2.2\Data.pdb
+C:\API\src\Api.Data\obj\Release\netcoreapp2.2\Data.genruntimeconfig.cache
