@@ -35,7 +35,7 @@ namespace Application
         public void ConfigureServices(IServiceCollection services)
         {
             ConfigureService.ConfigureDependenciesService(services);
-            ConfigureRepository.ConfigureDependenciesRepository(services);
+            ConfigureRepository.ConfigureDependenciesRepository(services, Configuration.GetConnectionString("DefaultConnection"));
 
             var config = new AutoMapper.MapperConfiguration(cfg => {
                 cfg.AddProfile(new DtoToModelProfile());
@@ -123,5 +123,7 @@ namespace Application
             app.UseMvc();
             
         }
+
+
     }
 }

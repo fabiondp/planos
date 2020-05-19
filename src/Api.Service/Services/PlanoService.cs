@@ -6,6 +6,7 @@ using Domain.DTO.Plano;
 using Domain.Entities;
 using Domain.Interfaces.Services;
 using Domain.Models;
+using Domain.Repository;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,13 +17,21 @@ namespace Service.Services
     public class PlanoService: IPlanoService
     {
         private IRepository<PlanoEntity> _repository;
+        private IPlanoRepository _planoRepository;
         private readonly IMapper _mapper;
 
-        public PlanoService(IRepository<PlanoEntity> repository, IMapper mapper)
+        public PlanoService(IRepository<PlanoEntity> repository, IMapper mapper, IPlanoRepository planoRepository)
         {
             _repository = repository;
+            _planoRepository = planoRepository;
             _mapper = mapper;
         }
+
+        public async Task<float> CalculaPrecoPlano(int idPlano, int qtdUnidades, int qtdFuncionarios)
+        {
+            return await _planoRepository.CalculaPrecoPlano(idPlano, qtdUnidades, qtdFuncionarios);
+        }
+        
 
 
         public async Task<PlanoCreateEditDTO> Post(PlanoCreateEditDTO pessoa)

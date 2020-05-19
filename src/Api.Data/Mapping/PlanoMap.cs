@@ -16,6 +16,8 @@ namespace Data.Mapping
 
             builder.HasKey(p => p.Id);
 
+            builder.Property(u => u.Id).UseSqlServerIdentityColumn();
+
             builder.Property(u => u.Titulo)
                     .IsRequired()
                     .HasMaxLength(300);
@@ -24,8 +26,11 @@ namespace Data.Mapping
                     .IsRequired()
                     .HasMaxLength(300);
 
+            builder.HasMany(c => c.CalculoFuncionarios)
+                    .WithOne(e => e.Plano);
 
-
+            builder.HasMany(c => c.CalculoUnidades)
+                   .WithOne(e => e.Plano);
 
 
 

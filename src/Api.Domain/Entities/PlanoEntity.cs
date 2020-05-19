@@ -11,5 +11,7 @@ namespace Domain.Entities
         public string Titulo { get; set; }
         public string Descricao { get; set; }
         public virtual ICollection<PlanoServicosEntity> Servicos { get; set; }
+        public ICollection<PlanoCalculoUnidadesEntity> CalculoUnidades { get; set; }
+        public ICollection<PlanoCalculoFuncionariosEntity> CalculoFuncionarios { get; set; }
     }
 }

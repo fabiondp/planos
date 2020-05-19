@@ -15,6 +15,8 @@ namespace Data.Mapping
 
             builder.HasKey(p => p.Id);
 
+            builder.Property(u => u.Id).UseSqlServerIdentityColumn();
+
             builder.Property(u => u.Descricao)
                     .IsRequired()
                     .HasMaxLength(300);

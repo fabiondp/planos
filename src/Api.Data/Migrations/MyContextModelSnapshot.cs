@@ -24,6 +24,8 @@ namespace Data.Migrations
                     b.Property<Guid>("Uid")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<DateTime?>("DataAlteracao");
+
                     b.Property<DateTime?>("DataCriacao");
 
                     b.Property<string>("Login");
@@ -41,11 +43,67 @@ namespace Data.Migrations
                     b.ToTable("ChaveAPI");
                 });
 
+            modelBuilder.Entity("Domain.Entities.PlanoCalculoFuncionariosEntity", b =>
+                {
+                    b.Property<int>("PlanoId");
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime?>("DataAlteracao");
+
+                    b.Property<DateTime?>("DataCriacao");
+
+                    b.Property<int>("QuantidadeMaxima");
+
+                    b.Property<int>("QuantidadeMinima");
+
+                    b.Property<Guid>("Uid");
+
+                    b.Property<float>("ValorPorFuncionario");
+
+                    b.HasKey("PlanoId", "Id");
+
+                    b.HasAlternateKey("Uid");
+
+                    b.ToTable("PlanoCalculoFuncionarios");
+                });
+
+            modelBuilder.Entity("Domain.Entities.PlanoCalculoUnidadesEntity", b =>
+                {
+                    b.Property<int>("PlanoId");
+
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime?>("DataAlteracao");
+
+                    b.Property<DateTime?>("DataCriacao");
+
+                    b.Property<int>("QuantidadeMaxima");
+
+                    b.Property<int>("QuantidadeMinima");
+
+                    b.Property<Guid>("Uid");
+
+                    b.Property<float>("ValorPorUnidade");
+
+                    b.HasKey("PlanoId", "Id");
+
+                    b.HasAlternateKey("Uid");
+
+                    b.ToTable("PlanoCalculoUnidades");
+                });
+
             modelBuilder.Entity("Domain.Entities.PlanoEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime?>("DataAlteracao");
 
                     b.Property<DateTime?>("DataCriacao");
 
@@ -72,6 +130,8 @@ namespace Data.Migrations
 
                     b.Property<int>("ServicoId");
 
+                    b.Property<DateTime?>("DataAlteracao");
+
                     b.Property<DateTime?>("DataCriacao");
 
                     b.Property<Guid>("Uid");
@@ -91,6 +151,8 @@ namespace Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<DateTime?>("DataAlteracao");
+
                     b.Property<DateTime?>("DataCriacao");
 
                     b.Property<string>("Descricao")
@@ -104,6 +166,22 @@ namespace Data.Migrations
                     b.HasAlternateKey("Uid");
 
                     b.ToTable("Servicos");
+                });
+
+            modelBuilder.Entity("Domain.Entities.PlanoCalculoFuncionariosEntity", b =>
+                {
+                    b.HasOne("Domain.Entities.PlanoEntity", "Plano")
+                        .WithMany("CalculoFuncionarios")
+                        .HasForeignKey("PlanoId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("Domain.Entities.PlanoCalculoUnidadesEntity", b =>
+                {
+                    b.HasOne("Domain.Entities.PlanoEntity", "Plano")
+                        .WithMany("CalculoUnidades")
+                        .HasForeignKey("PlanoId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 
             modelBuilder.Entity("Domain.Entities.PlanoServicosEntity", b =>

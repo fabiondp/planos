@@ -17,7 +17,8 @@ namespace Api.Data.Context
             modelBuilder.Entity<PlanoEntity>(new PlanoMap().Configure);
             modelBuilder.Entity<ServicosEntity>(new ServicosMap().Configure);
             modelBuilder.Entity<PlanoServicosEntity>(new PlanoServicosMap().Configure);
-
+            modelBuilder.Entity<PlanoCalculoUnidadesEntity>(new PlanoCalculoUnidadesMap().Configure);
+            modelBuilder.Entity<PlanoCalculoFuncionariosEntity>(new PlanoCalculoFuncionariosMap().Configure);
         }
 
         

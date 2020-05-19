@@ -22,6 +22,21 @@ namespace Application.Controllers
             _service = service;
         }
 
+        [HttpGet]
+        public async Task<ActionResult> CalculaPrecoPlano(int idPlano, int qtdUnidades, int qtdFuncionarios = 0)
+        {
+            if (!ModelState.IsValid) return BadRequest(ModelState); // validação dos parâmetros enviados
+
+            try
+            {
+                return Ok(await _service.CalculaPrecoPlano(idPlano, qtdUnidades, qtdFuncionarios));
+            }
+            catch (ArgumentException ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
 
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] PlanoCreateEditDTO model)

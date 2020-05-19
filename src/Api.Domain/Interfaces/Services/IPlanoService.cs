@@ -9,5 +9,6 @@ namespace Domain.Interfaces.Services
     public interface IPlanoService
     {
         Task<PlanoCreateEditDTO> Post(PlanoCreateEditDTO pessoa);
+        Task<float> CalculaPrecoPlano(int idPlano, int qtdUnidades, int qtdFuncionarios);
     }
 }
